@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* _abs - gives absolute value of a number
-* @n : description
+* _abs - give abs value.
+* @n : description.
 *
 * Return : int.
 */
