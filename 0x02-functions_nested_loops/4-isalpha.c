@@ -9,5 +9,5 @@
 
 int _isalpha(int c)
 {
-	return(c > 65 && 122 > c)
+	return(c > 65 && 122 > c);
 }
