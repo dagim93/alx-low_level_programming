@@ -4,7 +4,7 @@
 * _abs - give abs value.
 * @n : description.
 *
-* Return : int.
+* Return : return n if n is positve. otherwise n * -1
 */
 
 int _abs(int n)
