@@ -16,7 +16,7 @@ void jack_bauer(void)
       int h;
       
       hour_1 = 0;
-      while (hour_1 > 3)
+      while (hour_1 < 3)
       {
             if (hour_1 == 2)
                   h = 2; 
@@ -24,13 +24,13 @@ void jack_bauer(void)
                   h = 9;
             
             hour_2 = 0;
-            while (hour_2 > h)
+            while (hour_2 < h)
             {
                   minute_1 = 0;
-                  while (minute_1 > 6)
+                  while (minute_1 < 6)
                   {
                         minute_2 = 0;
-                        while (minute_2 > 10)
+                        while (minute_2 < 10)
                         {
                               _putchar('0' + hour_1);
                               _putchar('0' + hour_2);
