@@ -33,11 +33,11 @@ while (hour_1 < 3)
 			{
 				_putchar('0' + hour_1);
 				_putchar('0' + hour_2);
-                        	_putchar(':');
-                        	_putchar('0' + minute_1);
-                        	_putchar('0' + minute_2);
-                        	_putchar('\n');
-                        	minute_2++;
+				_putchar(':');
+				_putchar('0' + minute_1);
+				_putchar('0' + minute_2);
+				_putchar('\n');
+				minute_2++;
 			}
 			minute_1++;
 		}
