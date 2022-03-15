@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-* print_last_digit - tells the value is alphabet or not
-* @last : description
+* jack_bauer - print 24 hours.
 *
-* Return: 1 if the value is positive. 0 if the value is zero. -1 otherwise
+* Return: Always return 0.
 */
 
 void jack_bauer(void)
@@ -19,10 +18,14 @@ hour_1 = 0;
 while (hour_1 < 3)
 {
       if (hour_1 == 2)
-            h = 4; 
+      {      
+            h = 4;
+      }
       else
+      {
             h = 10;
-            
+      }
+      
       hour_2 = 0;
       while (hour_2 < h)
       {
