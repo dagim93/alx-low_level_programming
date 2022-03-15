@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+* print_sign - tells the value is alphabet or not
+* @n : description
+*
+* Return: 1 if the value is positive. 0 if the value is zero. -1 otherwise
+*/
+
 int print_sign(int n)
 {
 	int result;
@@ -18,6 +25,10 @@ int print_sign(int n)
 	{
 		_putchar('-');
 		result = -1;
+	}
+	else
+	{
+		result = n;
 	}
 	
 	return (result);
