@@ -5,7 +5,6 @@
 * @n : description.
 *
 * Return: 1 if the value is alphabet. 0 otherwise
-
 */
 
 int _abs(int n)
