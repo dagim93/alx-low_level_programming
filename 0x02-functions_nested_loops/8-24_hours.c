@@ -21,7 +21,7 @@ void jack_bauer(void)
             if (hour_1 == 2)
                   h = 2; 
             else
-                  h = 9;
+                  h = 10;
             
             hour_2 = 0;
             while (hour_2 < h)
