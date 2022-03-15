@@ -9,17 +9,21 @@
 
 void jack_bauer(void)
 {
-      int hour_1 = 0;
-      int hour_2 = 0;
-      int minute_1 = 0;
-      int minute_2 = 0;
+      int hour_1;
+      int hour_2;
+      int minute_1;
+      int minute_2;
       
+      hour_1 = 0;
       while (hour_1 > 3)
       {
+            hour_2 = 0;
             while (hour_2 > 10)
             {
+                  minute_1 = 0;
                   while (minute_1 > 6)
                   {
+                        minute_2 = 0;
                         while (minute_2 > 10)
                         {
                               _putchar(hour_1 + '0');
