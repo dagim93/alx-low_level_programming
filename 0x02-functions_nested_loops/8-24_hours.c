@@ -13,12 +13,18 @@ void jack_bauer(void)
       int hour_2;
       int minute_1;
       int minute_2;
+      int h;
       
       hour_1 = 0;
       while (hour_1 > 3)
       {
+            if (hour_1 == 2)
+                  h = 2; 
+            else
+                  h = 9;
+            
             hour_2 = 0;
-            while (hour_2 > 10)
+            while (hour_2 > h)
             {
                   minute_1 = 0;
                   while (minute_1 > 6)
