@@ -19,7 +19,7 @@ void jack_bauer(void)
       while (hour_1 < 3)
       {
             if (hour_1 == 2)
-                  h = 2; 
+                  h = 4; 
             else
                   h = 10;
             
