@@ -7,21 +7,15 @@
 * Return: 1 if the value is positive. 0 if the value is zero. -1 otherwise
 */
 
-int print_last_digit (int last)
+int print_last_digit(int n)
 {
-      int last_digit;
+	int nv;
 
-      if (last >= 0)
-      {
-            last_digit = last % 10;     
-      }
-      else
-      {
-            last = last * -1;
-            last_digit = last % 10;
-      }
-      
-      _putchar( last_digit + '0');
+	if (n < 0)
+		nv = -1 * (n % 10);
+	else
+		nv = n % 10;
 
-      return (last_digit);
+	_putchar(nv + '0');
+		return (nv);
 }
