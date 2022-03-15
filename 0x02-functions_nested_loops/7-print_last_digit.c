@@ -2,7 +2,7 @@
 
 /**
 * print_last_digit - tells the value is alphabet or not
-* @last : description
+* @n : description
 *
 * Return: 1 if the value is positive. 0 if the value is zero. -1 otherwise
 */
