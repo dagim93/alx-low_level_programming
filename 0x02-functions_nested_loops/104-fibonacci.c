@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i = 0;
-	long double int a = 0, b = 1, next = 0;
+	double int a = 0, b = 1, next = 0;
 
 	while (i < 98)
 	{
