@@ -8,14 +8,14 @@
 int main(void)
 {
 	int i = 0;
-	__int64_ a = 0, b = 1, next = 0;
+	unsigned long -m64 int a = 0, b = 1, next = 0;
 
 	while (i < 98)
 	{
 		next = a + b;
 		a = b;
 		b = next;
-		printf("%i", next);
+		printf("%lu", next);
 
 		if (i < 97)
 			printf(", ");
