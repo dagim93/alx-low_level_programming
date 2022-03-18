@@ -1,37 +1,37 @@
-#include <stdio.h>
-#include <math.h>
+#include "main.h"
 /**
- *main - entry point
+ *print_number - prints an integer
  *
- *Return:0(success)
+ *@n:input
  *
- *Description:testing above function
+ *Return:void
+ *
+ *Description:prints an integer
  *
  */
-int main(void)
+void print_number(int n)
 {
-	long int n, max, i;
+	unsigned int x, y, count;
 
-	max = -1;
-	n = 612852475143;
+	if (n < 0)
+	{
+		_putchar(45);
+		x = -n;
+	}
+	else
+	{
+		x = n;
+	}
+	y = x;
+	count = 1;
 
-	while (n % 2 == 0)
+	while (y > 9)
 	{
-		max = 2;
-		n = n / 2;
+		y /= 10;
+		count *= 10;
 	}
-	for (i = 3; i <= n / 2; i = i + 2)
+	for (; count >= 1; count /= 10)
 	{
-		while (n % i == 0)
-		{
-			max = i;
-			n = n / i;
-		}
+		_putchar(((x / count) % 10) + 48);
 	}
-	if (n > 2)
-	{
-		max = n;
-	}
-	printf("%ld\n", max);
-	return (0);
 }
