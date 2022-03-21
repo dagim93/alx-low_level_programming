@@ -3,11 +3,16 @@
 
 /**
 * _strlen - tells the length of a character
+* @s : pointer to the string to check
 *
 * Return : nothing
 */
 
 int _strlen(char *s)
 {
-      strlen((int*)s);
+      int i = 0;
+      while (s[i])
+	      i++;
+
+      return (i);
 }
