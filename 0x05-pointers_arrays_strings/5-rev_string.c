@@ -8,17 +8,23 @@
 
 void rev_string(char *s)
 {
-      long i = 0;
-      long count = 0;
-      long j = 0;
-      
-      while (s[count] != '\0')
-            count++;
-      j = count - 1;
-      
-      for (i = 0; i < count; i++)
-      {
-            s[i] = s[j];
-            j--;
-      }
+	int i, max, half;
+	char first, last;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	max = i - 1;
+	half = max / 2;
+
+	while (half >= 0)
+	{
+		first = s[max - half];
+		last = s[half];
+		s[half] = first;
+		s[max - half] = last;
+		half--;
+	}
 }
