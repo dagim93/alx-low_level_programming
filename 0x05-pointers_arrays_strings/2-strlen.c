@@ -5,14 +5,15 @@
 * _strlen - tells the length of a character
 * @s : pointer to the string to check
 *
-* Return : nothing
+* Return : int value i.
 */
 
 int _strlen(char *s)
 {
-      int i = 0;
-      while (s[i])
-	      i++;
+	int i = 0;
 
-      return (i);
+	while (s[i])
+		i++;
+
+	return (i);
 }
