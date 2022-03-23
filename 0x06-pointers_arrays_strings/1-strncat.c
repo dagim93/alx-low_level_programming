@@ -2,15 +2,19 @@
 
 /**
 * _strncat - concatinate two strings by using n bytes for src.
+* @dest: destination string.
+* @src: source string.
+* @n: byte for src.
 *
-* Return : char dest.
+* Return: char dest.
 */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i,j;
+	int i, j;
 
-	for (i = 0; dest[i] != '0'; ++i);
+	for (i = 0; dest[i] != '0'; )
+		++i;
 
 	for (j = 0; j < n; ++j, ++i)
 	{
@@ -20,5 +24,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i] = src[j];
 	}
 
-	return dest;
+	return (dest);
 }
