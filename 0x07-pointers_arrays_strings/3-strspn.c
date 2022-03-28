@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
-* _strchr- find first occurence of a string.
-* @c : the string to be found.
+* _strspn- calculate number of string are same in two strings
+* @s: string that is going to be checked
+* @accept: string to check.
+* @n: length of prefix substring.
 *
-* Return: char ot NULL.
+* Return: unsigned int n;
 */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+	unsigned i, j, n = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-		if (s[i] == c)
-			return &s[i];
+	for (i = 0; s[i] != ' ' && s[i] != '0'; i++)
+		for (j = 0; accept[j] != '0'; j++)
+			if (s[i] == accept[j])
+				n++;
 
-
-	return NULL;
+	return (n);
 }
