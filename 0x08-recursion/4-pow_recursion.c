@@ -5,7 +5,7 @@
 * @x: the number to be powered.
 * @y: how many time to power x.
 *
-* Reuturn: int number.
+* Return: int number.
 */
 
 int _pow_recursion(int x, int y)
