@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* main- prints argument passed.
+* main- prints argument passed by the user
 * @argc: number of arguments.
 * @argv: strings.
 *
-* Retutn: 0.
+* Return: 0.
 */
 
 int main(int argc, char *argv[])
