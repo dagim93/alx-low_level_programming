@@ -1,13 +1,23 @@
 #include "main.h"
-#include <stdlib.h>
+
+/**
+* main- multiplies two integers
+* @argc: number of arguments,
+* @argv: passed integer to be multiplied
+*
+* Return: 0 or 1.
+*/
 
 int main(int argc, char *argv[])
 {
-	int mul;
+	int mul, a, b;
 
 	if (argc >= 1)
 	{
-		mul = atoi(argv[1]) * atoi(argv[2]);
+		a = (int *) &argv[1];
+		b = (int *) &argv[2];
+
+		mul = a * b;
 		printf("%d", mul);
 	}
 	else
