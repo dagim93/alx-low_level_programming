@@ -1,6 +1,14 @@
 #include "main.h"
 
-int main (int argc, char *argv[])
+/**
+* main- prints argument passed.
+* @argc: number of arguments.
+* @argv: strings.
+*
+* Retutn: 0.
+*/
+
+int main(int argc, char *argv[])
 {
 	int i;
 
