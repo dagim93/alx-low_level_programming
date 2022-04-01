@@ -9,11 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-
 	if (argc != 0)
-		for (i = 0; *argv[i] != '\0'; i++)
-			_putchar(*argv[i]);
+		printf("%s", argv[0]);
 
 	return (0);
 }
