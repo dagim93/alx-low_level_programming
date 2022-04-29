@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 /**
  *print_binary - prints binary rep of a number
  *@n:no. to print
