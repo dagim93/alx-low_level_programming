@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 /**
  *get_bit - gets a bit at a certain index
  *@n:no. to find bit
